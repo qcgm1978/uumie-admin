@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+ul,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	boeder:0;
+	
+}
+a{text-decoration: none; font-size: 14px;}
+ul {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol,ul {
+	list-style: none;
+}
+q:before,q:after,
+blockquote:before,blockquote:after {
+	content: "";
+}
+
+body{width: 100%; font-family:"微软雅黑"}
+/* 返回顶部与置顶关注开始 */
+.rightside{float: right;width: 45px; height: 100px; z-index: 999;position: fixed;top:400px;right: 0px;}
+.rightside a{border:1px #ccc solid ;display:block; height:40px;  width:40px; margin-bottom:10px; text-align:center; padding-top:8px; color:#666;}
+.rightside a:hover{border:1px red solid ; color:red;}
+/* 标题开始*/
+.title{width: 100%; height: 60px; line-height:60px; background: #346ba9;}
+.title h1{color: #fff; font-size: 30px;padding-left: 20px;}
+/* 功能切换开始  */
+.Switch{height: 30px; background: #71a1d6;padding-left: 20px;}
+.Switch a{ background:#dce7f1; height: 20px; line-height: 30px; color: #280039;padding:2px;}
+
+.father{width: 100%;position: relative;height:500px;}
+/* 左侧列表开始 */
+.leftlist,.right{ position: absolute; top:10px; left:5px;}
+.leftlist{ width:150px;float:left;}
+.leftlist .outer{ height: 500px; border:1px solid #f1f1f1;}
+.leftlist .outer.one li{height:20px;}
+.leftlist .outer li{height: 150px;}
+.leftlist li a{ color: #000; font-weight: bold;}
+.leftlist li a:hover{color:#014da2; text-decoration: underline;}
+.leftlist .outer .inside{ padding-left:10px;height:150px;}
+.leftlist .outer .inside li{height:110px; font-size:14px; font-weight:bold;}
+.leftlist .outer .inside li .most li{height:20px;}
+.leftlist .outside a,.leftlist .most a{color: #080808;}
+/* 下级菜单隐藏 */
+.outside,.most{
+	display: block;
+	padding-left: 20px;	
+}
+.leftlist ul.outer li  .outside a,.leftlist ul.outer li  .most a{font-weight:normal;}
+/* 右侧内容详情开始 */ 
+.right{ margin-left:170px;width:75%;}
+.right .Search{ border:1px #a0a0a0 solid;}
+.Search,.Search.sen,.Search.thr,.Search.fou{
+	margin-top: 10px;
+	display: block;
+	float: left;
+	width: 100%;
+}
+.Search ul,.Search.sen ul,.Search.thr ul,.Search.fou ul{ font-size:12px;}
+.Search ul li{ float:left; padding:12px;}
+.Search.sen ul li{ float:left; padding:20px;}
+.Search.thr ul li{ float:left; padding:12px;}
+.Search.fou ul li{ float:left; padding:12px;}
+.Search.fiv ul li{ float:left; padding:12px;}
+.Search ul li  a img,.Search.thr ul li a img,.Search.sen ul li a img,.Search.thr ul li a img,.Search.fou ul li a img,.Search.fiv ul li a img{border:1px #ccc solid;width:320px;}
+ .Search.fiv ul li a img{width:80px; height:60px;}
+.Search ul li a:hover img,.Search.sen ul li a:hover img,.Search.thr ul li a:hover img,.Search.fou ul li a:hover img,.Search.fiv ul li a:hover img,.Search ul li a img.hover_effect{border:1px  red solid;}
+/*.Search ul li a:visited img{border:1px  red solid;}*/
+.Search.fiv ul li a:hover img{-moz-transform:scale(3,3);-webkit-transform:scale(3,3);transform:scale(3,3);z-index:99999;position:relative;box-shadow:0 2px 8px #666;-moz-box-shadow:0 2px 8px #666;-webkitbox-shadow:0 2px 8px #666; overflow:auto;}
+.Search ul li  p,.Search.sen ul li p,.Search.thr ul li  p,.Search.fou ul li  p,.Search.fiv ul li  p{ height:25px; line-height:25px;}
+
+.Search.thr ul li  p,.Search.fou ul li  p,.Search.fou ul li  p{ text-align:center;}
+.Search ul li .xiamai,.Search ul li .ti{color:#FF0000;}
+.right .select{height: 30px; line-height: 30px; background: #f1f1f1;padding-left: 10px; margin-top:10px; border:1px #a0a0a0 solid;}
+.right .currpage{height: 30px; line-height: 30px; background: #f1f1f1;padding-left: 10px;border:1px #a0a0a0 solid;}
+
+.right .currpage .stration{color:#000; font-weight: bold;}
+.right .currpage .Monitor{color:#666; font-weight: bold;}
+
+.select #time{ height:20px; width:55px;}
+
+.right .jump{
+	height: 30px;
+	line-height: 30px;
+	background: #f1f1f1;	
+	margin-top: 20px;
+	display: block;
+	float: left;
+	width: 100%;
+}
+.jump p{ font-size:12px; color:#666; float:left;padding-left: 10px;}
+.jump p.jpage{ float:right; padding-right:10px;}
+.jump p a{ color:#666;}
+.jump p a:hover{ color:#280039;}
+.jump #pag{ width:30px;}
+.most li a {
+	font-weight: normal;
+}

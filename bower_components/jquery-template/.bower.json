@@ -1,0 +1,15 @@
+{
+  "name": "jquery-template",
+  "homepage": "https://github.com/codepb/jquery-template",
+  "version": "1.4.5",
+  "_release": "1.4.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.4.5",
+    "commit": "6394a1fb2e845225fdcaa4d46c4bc01a5875b055"
+  },
+  "_source": "https://github.com/codepb/jquery-template.git",
+  "_target": "~1.4.5",
+  "_originalSource": "https://github.com/codepb/jquery-template.git",
+  "_direct": true
+}

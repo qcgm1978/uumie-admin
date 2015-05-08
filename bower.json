@@ -1,0 +1,20 @@
+{
+  "name": "admin",
+  "version": "0.0.0",
+  "authors": [
+    "qcgm1978 <qcgm197874@gmail.com>"
+  ],
+  "main": "index.php",
+  "license": "MIT",
+  "homepage": "http://localhost/index.php?r=admin/login/index",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-template": "https://github.com/codepb/jquery-template.git#~1.4.5"
+  }
+}

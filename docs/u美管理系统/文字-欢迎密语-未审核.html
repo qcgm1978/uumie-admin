@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>U美直播社区后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<style type="text/css">
+.right .Search{border: 1px #a0a0a0 solid;}
+.right .Search table.list{
+	font-size: 14px;
+	border-bottom: 1px #ccc solid;
+	color: #000;
+	font-family: "微软雅黑";
+}
+
+.right .Search .list td{height:40px; line-height:40px;  text-align:center;}
+.right .Search table.number{ font-size:14px; border-bottom:1px #ccc solid; color:#000;font-family:"微软雅黑"; background-color:#dcdcdc;}
+.right .Search table.number td{ width:15%; height:40px; line-height:40px; text-align:center; border-right:1px #ccc solid;}
+.right .Search table.number td span{ font-weight:bold;}
+.right .Search a.one{color:red;}
+.right .Search a.sen{color:#090;}
+.right .Search a.thr{color:red;}
+.right .Search a.fou{color:#090;}
+</style>
+</head>
+
+<body>
+  <!-- 标题开始 -->
+  <div class=title><h1>U美直播社区后台管理系统</h1></div>
+  <!-- 标题结束 -->
+
+  <!-- 功能切换开始 -->
+  <div class="Switch">
+      <a href="实时监控.html">监控管理</a>
+      <a href="审核管理.html">审核管理</a>
+      <a href="推荐池子.html">推荐池管理</a>
+  </div>
+  <!-- 功能切换结束 -->
+  <div class="father">
+  <!-- 左侧列表开始 -->
+  <div class="leftlist">
+      <ul class="outer">
+        <li><a href="审核管理.html">审核管理</a>
+          <!-- 下级菜单隐藏-->
+            <ul class="inside">
+              <li>个人头像
+                  <ul class="most">
+                      <li><a href="图片-个人头像-未审核.html">个人头像-未审核</a></li>
+                      <li><a href="图片-个人头像-已审核.html">个人头像-已审核</a></li>
+                      <li><a href="图片-个人头像-已通过.html">个人头像-已通过</a></li>
+                      <li><a href="图片-个人头像-已屏蔽.html">个人头像-已屏蔽</a></li>
+                  </ul>
+              </li>
+              <li>房间图片
+                  <ul class="most">
+                      <li><a href="图片-房间图-未审核.html">房间图片-未审核</a></li>
+                      <li><a href="图片-房间图-已审核.html">房间图片-已审核</a></li>
+                      <li><a href="图片-房间图-已通过.html">房间图片-已通过</a></li>
+                      <li><a href="图片-房间图-已屏蔽.html">房间图片-已屏蔽</a></li>
+                  </ul>
+              </li>
+              <li>房间公告
+                  <ul class="most">
+                      <li><a href="文字-房间公告-未审核.html">房间公告-未审核</a></li>
+                      <li><a href="文字-房间公告-已审核.html">房间公告-已审核</a></li>
+                      <li><a href="文字-房间公告-已通过.html">房间公告-已通过</a></li>
+                      <li><a href="文字-房间公告-已屏蔽.html">房间公告-已屏蔽</a></li>
+                  </ul>
+              </li>
+              <li>欢迎密语
+                 <ul class="most"> 
+                  <li><a href="文字-欢迎密语-未审核.html">欢迎密语-未审核</a></li>
+                  <li><a href="文字-欢迎密语-已审核.html">欢迎密语-已审核</a></li>
+                  <li><a href="文字-欢迎密语-已通过.html">欢迎密语-已通过</a></li>
+                  <li><a href="文字-欢迎密语-已屏蔽.html">欢迎密语-已屏蔽</a></li>
+                  </ul>   
+              </li>
+            </ul>  
+        </li>        
+      </ul>
+  </div>
+  <!-- 左侧列表结束 -->
+  <!-- 右侧内容详情开始 -->
+  <div class="right">
+    <!-- 当前页显示开始 -->
+      <div class="currpage">
+          <a href="" class="stration">后台管理</a>--
+          <a href="" class="Monitor">审核管理</a>--
+          <a href="" style="color:#666"><span>欢迎密语</span>-未审核</a>
+          
+      </div>
+    <!-- 当前页显示结束 -->
+    <!--搜索栏开始-->
+    <div class="select">
+        <input type="text" value="用户昵称/UID" width="150px" height="20px"/>
+        <input id="time" type="text" value="时间控件"/> --
+        <input id="time" type="text" value="时间控件"/>
+        <input name="" type="button" value="查询" />
+    </div>
+      <!--搜索栏结束-->
+      <!--内容开始-->
+    <div class="Search">
+      <table width="100%" border="0" class="number">
+       	  <tr>
+            <td width="400" height="67"><input name="" type="checkbox" value="" style=" margin-top:14px; float:left"/>文字</td>
+            <td width="200">操作</td>
+            <td>昵称</td>
+            <td>UID</td>
+            <td>上传时间</td>
+   	    </tr>
+      </table>
+        <table width="100%" class="list"onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='#fff'">
+       	  <tr>
+            <td width="300" align="center"><input name="" type="checkbox" value="" style=" margin-top:14px; float:left"/>京哈数据库的凤凰金额为</td>
+            <td width="300" >
+              <input type="button" value="通过" style="width:80px; height:35px;"/>
+                    &nbsp;&nbsp;
+              <input type="button" value="屏蔽" style="width:80px; height:35px;"/></td>
+            <td width="300" >凤凰山的风</td>
+            <td width="300" >32023065</td>
+            <td width="300" >2015-02-03</td>
+   	     </tr>
+         </table>
+          <table width="100%" class="list" onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='#fff'">
+       	  <tr>
+            <td width="300" align="center"><input name="" type="checkbox" value="" style=" margin-top:14px; float:left"/>京哈数据库的凤凰金额为</td>
+            <td width="300" ><input type="button" value="通过" style="width:80px; height:35px;"/>
+                    &nbsp;&nbsp;
+                <input type="button" value="屏蔽"  style="width:80px; height:35px;"/></td>
+            <td width="300" >凤凰山的风</td>
+            <td width="300" >32023065</td>
+            <td width="300" >2015-02-03</td>
+   	     </tr>
+         </table> <table width="100%" class="list" onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='#fff'">
+       	  <tr>
+            <td width="300" align="center"><input name="" type="checkbox" value="" style=" margin-top:14px; float:left"/>京哈数据库的凤凰金额为</td>
+            <td width="300" ><input type="button" value="通过" style="width:80px; height:35px;"/>
+                    &nbsp;&nbsp;
+                <input type="button" value="屏蔽" style="width:80px; height:35px;"/></td>
+            <td width="300" >凤凰山的风</td>
+            <td width="300" >32023065</td>
+            <td width="300" >2015-02-03</td>
+   	     </tr>
+         </table>
+      <table width=100% style=" padding-left:10%">
+        	<tr>
+            	<td width="100%" align="center">
+                	<input type="button" value="全选" style="width:80px; height:35px;"/>
+                    &nbsp;&nbsp;
+                <input type="button" value="取消全选" style="width:80px; height:35px;"/>
+                    &nbsp;&nbsp;
+                <input type="button" value="通过已选择的"style="width:100px; height:35px;"/>
+                    &nbsp;&nbsp;
+                <input type="button" value="屏蔽已选择的" style="width:100px; height:35px;"/>
+                </td>       
+        </tr>
+	  </table>
+    </div>
+    <!--内容结束-->
+    <!-- 跳转开始 -->
+    <div class="jump">
+         <p>共 71 条记录，共 4 页，当前显示第 1 页</p>
+         <p class="jpage">上一页
+            <a href="">1</a> 
+            <a href="">2</a> 
+            <a href="">3</a> 
+            <a href="">4</a> 
+            <a href="">5</a> 
+            <a href="">6</a> 
+            <a href="">7</a> 
+            <a href="">8</a> 
+            <a href="">9</a> 
+            <a href="">下一页 </a>   
+      跳转到 
+      <input type="text"  id="pag" /> 
+      页 <input name="" type="button" value="GO" /> </p>
+             
+    </div>
+    <!-- 跳转结束 -->
+    </div>
+  </div>
+</body>
+</html>
